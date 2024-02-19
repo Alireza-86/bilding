@@ -382,13 +382,14 @@ header nav ul a {
 }
 
 .content-img {
-    width: 30%;
+    width: 275px;
+    height: 183px;
+}
+.content-img img{
+    width: 100%;
 }
 
-.tab-content img {
-    width: 100%;
-    height: 100%;
-}
+
 
 /* about */
 

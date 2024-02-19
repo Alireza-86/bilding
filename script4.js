@@ -1,8 +1,8 @@
   const open =document.querySelector('.li');
   const hid =document.querySelector('.hide');
-  document.addEventListener('click',function(){
-    hid.classList.toggle('active')
-  })
+  // document.addEventListener('click',function(){
+  //   hid.classList.toggle('active')
+  // })
   var typed = new Typed('#typed', {
     Strings: [
         "لورم متون ساختگی با تولید نا مفهوم",
@@ -25,3 +25,13 @@
     enableDrag:false,
     slideMargin: 15 ,
   });
+  function setMedia(event){
+    const lastActive = document.querySelectorAll(".active")
+    lastActive.forEach(item => {
+      item.classList.remove("active")
+    });
+    let idClass = event.target.id
+    let media = document.querySelector(`.${idClass}`)
+    media.classList.add("active")
+  }
+  
